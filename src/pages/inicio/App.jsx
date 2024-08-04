@@ -25,19 +25,19 @@ export default function Inicio() {
             <div className='ex1'>
               <img src='./assets/images/laranja.png' alt='' width='60' height='60' />
               <p className='nomeex'>Cupom de desconto</p>
-              <p>Exercício 01</p>
+              <Link to= '/exercicio1'><p>Exercício 01</p></Link>
             </div>
 
             <div className='ex2'>
               <img src='./assets/images/verde.png' alt='' width='60' height='60' />
               <p className='nomeex'>Converter Kg/gramas</p>
-              <p>Exercício 02</p>
+              <Link to= '/exercicio2'><p>Exercício 02</p></Link>
             </div>
 
             <div className='ex3'>
               <img src='./assets/images/ciano.png' alt='' width='60' height='60' />
               <p className='nomeex'>Valor total por quantidade</p>
-              <p>Exercício 03</p>
+              <Link to= '/exercicio3'><p>Exercício 03</p></Link>
             </div>
 
           </div>
