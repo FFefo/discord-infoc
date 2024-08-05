@@ -22,7 +22,7 @@ export default function Exercicio1() {
         <div className='execabeçalho'>
 
           <div className='setinhaa'>
-            <img src="/assets/images/setinha.png" alt="" width='32px' />
+            <Link to= '/'><img src="/assets/images/setinha.png" alt="" width='32px' /></Link>
           </div>
 
           <div className='tilt'>
@@ -38,7 +38,7 @@ export default function Exercicio1() {
         <div className='conteudoexe'>
 
           <div className='exercicio'>
-            <p>Implementar um programa em Javascript para calcular o total de uma venda de açaí a partir das quantidades compradas para cada tamanho: pequeno, médio e grande, <br /> sabendo que o valor do açaí é R$ 13,50; R$ 15,00 e R$ 17,50 respectivamente</p>
+            <p>Implementar um programa em Javascript para calcular o <b>total de uma venda de açaí</b> a partir das quantidades compradas para cada tamanho: <b>pequeno, médio e grande</b>, <br /> sabendo que o valor do açaí é R$ 13,50; R$ 15,00 e R$ 17,50 respectivamente</p>
           </div>
 
           <div className='sla'>
