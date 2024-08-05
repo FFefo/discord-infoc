@@ -1,8 +1,28 @@
 import './Ex1.scss'
 import { Link } from 'react-router-dom';
-
+import { useState } from 'react';
 
 export default function Exercicio1() {
+
+  const [valorPedido, setValorPedido] = useState(0);
+  const [valorCupom, setValorCupom] = useState(0);
+  const [calculo, SetCalculo] = useState(0)
+
+  function Pedido(e) {
+    let novoValor = Number(e.target.value)
+    setValorPedido(novoValor)
+  }
+
+  function Cupom(e) {
+    let novoCupom = Number(e.target.value)
+    setValorCupom(novoCupom)
+  }
+
+  function Resultado() {
+    let novoCalculo = Number(valorPedido * (valorCupom / 100))
+    SetCalculo(novoCalculo)
+  }
+
   return (
     <div className="Ex1">
       <header className="pagina-exercicio1">
@@ -36,22 +56,22 @@ export default function Exercicio1() {
             <div className='grupo1'>
 
               <h4>Informe o valor do pedido</h4>
-              <input type="text" placeholder='0' />
+              <input type="text" placeholder='0' value={valorPedido} onChange={Pedido} />
             </div>
             <br />
             <div className='grupo2'>
               <h4>Informe o valor do cupom</h4>
-              <input type="text" placeholder='0' />
+              <input type="text" placeholder='0' value={valorCupom} onChange={Cupom} />
             </div>
 
             <div className='botão'>
-              <button>Executar</button>
+              <button onClick={Resultado}>Executar</button>
             </div>
 
           </div>
 
           <div className='resultado'>
-            <h4>Resultado: O total é R$ 0,00</h4>
+            <h4>Resultado: O total é R${calculo.toFixed(2)}</h4>
           </div>
         </div>
       </div>

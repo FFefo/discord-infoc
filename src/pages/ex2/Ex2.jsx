@@ -1,8 +1,24 @@
 import './Ex2.scss'
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 
-export default function Exercicio1() {
+export default function Exercicio2() {
+
+    const [valorKilo, setValorKilo] = useState(0);
+    const [valorGrama, setValorGrama] = useState(0);
+
+    function Kilo (e) {
+      let novoKilo = Number(e.target.value)
+      setValorKilo(novoKilo)
+    }
+
+    function Grama (e) {
+      let novaGrama = valorKilo * 1000
+      setValorGrama(novaGrama)
+    }
+
+
   return (
     <div className="Ex2">
       <header className="pagina-exercicio2">
@@ -35,18 +51,18 @@ export default function Exercicio1() {
           <div className='caixa'>
             <div className='grupo1'>
 
-              <h4>Valor em gramas</h4>
-              <input type="text" placeholder='0' />
+              <h4>Valor em kilos</h4>
+              <input type="text" placeholder='0' value={valorKilo} onChange={Kilo}/>
             </div>
-          
-            <div className='botão'>
+
+            <div className='botão' onClick={Grama}>
               <button>Executar</button>
             </div>
 
           </div>
 
           <div className='resultado'>
-            <h4>Resultado: O total é R$ 0,00</h4>
+            <h4>Resultado: O total em gramas é {valorGrama}</h4>
           </div>
         </div>
       </div>

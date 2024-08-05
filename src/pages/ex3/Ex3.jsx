@@ -1,7 +1,36 @@
+import { useState } from 'react';
 import './Ex3.scss'
 import { Link } from 'react-router-dom';
 
-export default function Exercicio1() {
+export default function Exercicio3() {
+
+  const[valorPeq, setValorPeq] = useState(0)
+  const[valorMed, setValorMed] = useState(0)
+  const[valorGra, setValorGra] = useState(0)
+  const[novoRtt, setNovoRtt] = useState(0)
+
+  function Peq(e) {
+    let novoPeq = Number(e.target.value)
+    setValorPeq(novoPeq)
+  }
+
+  function Med(e) {
+    let novoMed = Number(e.target.value)
+    setValorMed(novoMed)
+  }
+
+  function Gra(e) {
+    let novoGra = Number(e.target.value)
+    setValorGra(novoGra)
+  }
+
+  function Resultado() {
+    let novoResult = Number((valorPeq * 13.50) + (valorMed * 15.00) + (valorGra * 17.50))
+    setNovoRtt(novoResult)
+  }
+
+
+
   return (
     <div className="Ex3">
       <header className="pagina-exercicio3">
@@ -53,20 +82,20 @@ export default function Exercicio1() {
 
             <div className='calestrutura'>
 
-              <input className='op1' type="text" placeholder='0' />
-              <input className='op2' type="text" placeholder='0' />
-              <input className='op3' type="text" placeholder='0' />
+              <input className='op1' type="text" placeholder='0' value={valorPeq} onChange={Peq}/>
+              <input className='op2' type="text" placeholder='0' value={valorMed} onChange={Med}/>
+              <input className='op3' type="text" placeholder='0' value={valorGra} onChange={Gra}/>
 
             </div>
 
             <div className='execut'>
-              <button className='bt'><h3>Executar</h3></button>
+              <button className='bt' onClick={Resultado}><h3>Executar</h3></button>
             </div>
 
           </div>
 
           <div className='result'>
-            <h4>Resultado: O total é R$ 0,00</h4>
+            <h4>Resultado: O total é R$ {novoRtt.toFixed(1)}</h4>
           </div>
 
         </div>
