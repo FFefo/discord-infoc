@@ -59,10 +59,9 @@
       }
     }
 
-    .amalero {
-      margin-top: -3px;
-      align-self: normal;
-      margin-left: -5px;
+    .laranja {
+      background: #ffce37;
+      
     }
 
     .conteúdo {
@@ -126,7 +125,7 @@
       .botão {
         display: flex;
         justify-content: end;
-      
+
         button {
           background-color: #6278F7;
           font-size: 15px;
@@ -141,7 +140,7 @@
       }
     }
 
-    .resultado{
+    .resultado {
       position: relative;
       top: -18px;
       left: 125px

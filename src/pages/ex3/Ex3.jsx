@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 export default function Exercicio3() {
 
-  const[valorPeq, setValorPeq] = useState(0)
-  const[valorMed, setValorMed] = useState(0)
-  const[valorGra, setValorGra] = useState(0)
-  const[novoRtt, setNovoRtt] = useState(0)
+  const [valorPeq, setValorPeq] = useState(0)
+  const [valorMed, setValorMed] = useState(0)
+  const [valorGra, setValorGra] = useState(0)
+  const [novoRtt, setNovoRtt] = useState(0)
 
   function Peq(e) {
     let novoPeq = Number(e.target.value)
@@ -51,7 +51,7 @@ export default function Exercicio3() {
         <div className='execabeçalho'>
 
           <div className='setinhaa'>
-            <Link to= '/'><img src="/assets/images/setinha.png" alt="" width='32px' /></Link>
+            <Link to='/'><img src="/assets/images/setinha.png" alt="" width='32px' /></Link>
           </div>
 
           <div className='tilt'>
@@ -82,9 +82,9 @@ export default function Exercicio3() {
 
             <div className='calestrutura'>
 
-              <input className='op1' type="text" placeholder='0' value={valorPeq} onChange={Peq}/>
-              <input className='op2' type="text" placeholder='0' value={valorMed} onChange={Med}/>
-              <input className='op3' type="text" placeholder='0' value={valorGra} onChange={Gra}/>
+              <input className='op1' type="text" placeholder='0' value={valorPeq} onChange={Peq} />
+              <input className='op2' type="text" placeholder='0' value={valorMed} onChange={Med} />
+              <input className='op3' type="text" placeholder='0' value={valorGra} onChange={Gra} />
 
             </div>
 

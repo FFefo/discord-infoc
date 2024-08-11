@@ -5,18 +5,18 @@ import { useState } from 'react';
 
 export default function Exercicio2() {
 
-    const [valorKilo, setValorKilo] = useState(0);
-    const [valorGrama, setValorGrama] = useState(0);
+  const [valorKilo, setValorKilo] = useState(0);
+  const [valorGrama, setValorGrama] = useState(0);
 
-    function Kilo (e) {
-      let novoKilo = Number(e.target.value)
-      setValorKilo(novoKilo)
-    }
+  function Kilo(e) {
+    let novoKilo = Number(e.target.value)
+    setValorKilo(novoKilo)
+  }
 
-    function Grama (e) {
-      let novaGrama = valorKilo * 1000
-      setValorGrama(novaGrama)
-    }
+  function Grama(e) {
+    let novaGrama = valorKilo * 1000
+    setValorGrama(novaGrama)
+  }
 
 
   return (
@@ -39,9 +39,8 @@ export default function Exercicio2() {
           <h2>Exercício 02 - Converter Kg/gramas</h2>
         </div>
 
-        <div className='amalero'>
-          <img src="./assets/images/faixaverde.png" alt="" height='4px' width='1170px' />
-        </div>
+        <div className='limao faixa'></div>
+
         <div className='conteúdo'>
 
           <div className='descrição'>
@@ -52,7 +51,7 @@ export default function Exercicio2() {
             <div className='grupo1'>
 
               <h4>Valor em kilos</h4>
-              <input type="text" placeholder='0' value={valorKilo} onChange={Kilo}/>
+              <input type="text" placeholder='0' value={valorKilo} onChange={Kilo} />
             </div>
 
             <div className='botão' onClick={Grama}>

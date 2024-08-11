@@ -43,9 +43,7 @@ export default function Exercicio1() {
           <h2>Exercício 01 - Cupom de desconto</h2>
         </div>
 
-        <div className='amalero'>
-          <img src="./assets/images/faixaamalera.png" alt="" height='4px' width='1170px' />
-        </div>
+        <div className='laranja faixa'></div>
         <div className='conteúdo'>
 
           <div className='descrição'>
