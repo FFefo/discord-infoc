@@ -6,22 +6,22 @@ export default function Exercicio1() {
 
   const [valorPedido, setValorPedido] = useState(0);
   const [valorCupom, setValorCupom] = useState(0);
-  const [calculo, SetCalculo] = useState(0)
+  const [calculo, setCalculo] = useState(0);
 
   function Pedido(e) {
     let novoValor = Number(e.target.value)
     setValorPedido(novoValor)
-  }
+  };
 
   function Cupom(e) {
     let novoCupom = Number(e.target.value)
     setValorCupom(novoCupom)
-  }
+  };
 
   function Resultado() {
     let novoCalculo = Number(valorPedido * (valorCupom / 100))
-    SetCalculo(novoCalculo)
-  }
+    setCalculo(novoCalculo)
+  };
 
   return (
     <div className="Ex1">
