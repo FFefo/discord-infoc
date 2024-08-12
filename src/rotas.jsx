@@ -12,6 +12,7 @@ import Exercicio7 from './pages/ex7/Ex7';
 import Exercicio8 from './pages/ex8/Ex8';
 import Exercicio9 from './pages/ex9/Ex9';
 import Exercicio10 from './pages/ex10/Ex10';
+import Exercicio11 from './pages/ex11/Ex11';
 
 
 export default function Navegacao() {
@@ -30,6 +31,7 @@ export default function Navegacao() {
                 <Route path= '/exercicio8' element={<Exercicio8/>} />
                 <Route path= '/exercicio9' element={<Exercicio9/>} />
                 <Route path= '/exercicio10' element={<Exercicio10/>} />
+                <Route path= '/exercicio11' element={<Exercicio11/>} />
 
             </Routes>
         </BrowserRouter>

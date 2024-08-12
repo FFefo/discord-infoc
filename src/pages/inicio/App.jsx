@@ -81,6 +81,13 @@ export default function Inicio() {
               <p className='nomeex'>Cálculo IMC</p>
               <Link to='/exercicio10'><p>Exercício 10</p></Link>
             </div>
+
+            <div className='ex11 quadrado'>
+              <div className='marrom'></div>
+              <p className='nomeex'>Tabuada</p>
+              <Link to='/exercicio11'><p>Exercício 11</p></Link>
+
+            </div>
           </div>
 
         </div>
