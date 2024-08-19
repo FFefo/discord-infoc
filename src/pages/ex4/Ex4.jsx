@@ -3,6 +3,27 @@ import './Ex4.scss'
 import { Link } from 'react-router-dom';
 
 export default function Exercicio4() {
+    const[nomeLivro, setNomeLivro] = useState('')
+    const[totalPages, setTotalPages] = useState(0)
+    const[totalSegs, setTotalSegs] = useState(0)
+
+    function Livro(e){
+        let novoLivro = String(e.target.value)
+        setNomeLivro(novoLivro)
+    }
+
+    function Pages(e){
+        let pagesTotal = Number(e.target.value)
+        setTotalPages(pagesTotal)
+    }
+
+    function Segs(e){
+        let segsTotal = Number(e.target.value)
+        setTotalSegs(segsTotal)
+    }
+
+    function Calculo
+
     return (
         <div className='motheeeeer'>
 

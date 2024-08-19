@@ -8,6 +8,7 @@ export default function Exercicio10() {
     const [valorPeso, setValorPeso] = useState(0)
     const [valorIMC, setValorIMC] = useState(0)
     const [situacaoIMC, setSituacaoIMC] = useState('')
+    const [listaIMC, setListaIMC] = useState([])
 
     function Altura(e) {
         let novaAltura = Number(e.target.value)
@@ -73,12 +74,12 @@ export default function Exercicio10() {
                         <div className='grupo1'>
 
                             <h4>Informe sua altura em metros</h4>
-                            <input type="text" placeholder='0' value={valorAltura} onChange={Altura}/>
+                            <input type="text" placeholder='0' value={valorAltura} onChange={Altura} />
                         </div>
                         <br />
                         <div className='grupo2'>
                             <h4>Informe seu peso em Kg</h4>
-                            <input type="text" placeholder='0' value={valorPeso} onChange={Peso}/>
+                            <input type="text" placeholder='0' value={valorPeso} onChange={Peso} />
                         </div>
 
                         <div className='botão'>

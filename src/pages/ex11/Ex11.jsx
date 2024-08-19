@@ -2,19 +2,14 @@ import './Ex11.scss'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-export default function Exercicio6() {
+export default function Exercicio11() {
 
     const [valorNum, setValorNum] = useState(0);
-    const [vetorTabuada, setVetorTabuada] = useState[0]
+    const [vetorTabuada, setVetorTabuada] = useState([0]);
 
     function Numero (e) {
         let novoValor = Number(e.target.value)
         setValorNum(novoValor)
-    }
-
-    function Tabuada () {
-
-
     }
 
     return (
@@ -49,7 +44,7 @@ export default function Exercicio6() {
                     <div className='caixa'>
                         <div className='grupo1'>
 
-                            <h4>Tabuada do</h4>
+                            <h4>Tabuada</h4>
                             <input type="text" placeholder='0' />
                         </div>
 
@@ -60,7 +55,7 @@ export default function Exercicio6() {
                     </div>
 
                     <div className='resultado'>
-                        <h4></h4>
+                        <h4>a</h4>
                     </div>
                 </div>
             </div>
