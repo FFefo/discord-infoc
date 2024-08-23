@@ -1,0 +1,152 @@
+.mth {
+    background-color: #f5f6fa;
+    height: 1024px;
+
+    .pagina-inicio {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 90px;
+        background-color: #6278F7;
+        color: white;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            position: relative;
+            left: 80px;
+
+            h2 {
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .topicos {
+        display: flex;
+        position: relative;
+        right: 80px;
+        gap: 25px;
+        font-size: 20px;
+        font-weight: 300;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .conteudo-pt {
+        display: flex;
+        flex-direction: column;
+        margin-left: 78px;
+        margin-top: 48px;
+
+        .tt-01 {
+            align-items: center;
+            align-self: normal;
+            display: flex;
+            gap: 18px;
+            margin-left: -5px;
+
+            h2 {
+                font-size: 24px;
+            }
+        }
+
+        .azul {
+            background: #0000ff;
+        }
+
+        .ct-01 {
+            gap: 27px;
+            margin-left: -78px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .exe05 {
+                display: flex;
+                justify-content: center;
+                line-height: 15px;
+                font-size: 15px;
+                margin-top: 22px;
+                text-align: center;
+                padding: 80px 15px;
+
+                width: 1170px;
+                height: 195px;
+                background-color: white;
+                border-radius: 10px;
+
+                p {
+                    width: 1130px;
+                }
+            }
+        }
+
+        .caixinha-estrutura {
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+            padding-top: 30px;
+            padding-left: 25px;
+            height: 180px;
+            width: 55%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: -1px -1px 10px 1px rgba(214, 214, 214, 0.747);
+
+            .intp {
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .groupo {
+
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                input {
+                    border: 1px solid #a5a5a5;
+                    border-radius: 13px;
+                    width: 132px;
+                    height: 40px;
+                    padding-left: 15px;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+
+            .bt-01 {
+                display: flex;
+                justify-content: end;
+
+                button {
+                    background-color: #6278F7;
+                    font-size: 15px;
+                    color: white;
+                    border: 0px;
+                    border-radius: 10px;
+                    height: 45px;
+                    width: 197px;
+                    margin-top: 24px;
+                    margin-right: 31px;
+                }
+            }
+
+        }
+
+        .result-01 {
+            position: relative;
+            top: -18px;
+            left: 250px
+        }
+
+    }
+
+}

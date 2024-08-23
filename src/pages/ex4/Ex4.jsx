@@ -6,6 +6,7 @@ export default function Exercicio4() {
     const[nomeLivro, setNomeLivro] = useState('')
     const[totalPages, setTotalPages] = useState(0)
     const[totalSegs, setTotalSegs] = useState(0)
+    const[totalValor, setTotalValor] = useState(0)
 
     function Livro(e){
         let novoLivro = String(e.target.value)
@@ -22,7 +23,10 @@ export default function Exercicio4() {
         setTotalSegs(segsTotal)
     }
 
-    function Calculo
+    function CalculoTotal() {
+        let total = (totalPages * totalSegs) / 3600
+        setTotalValor(total)
+    }
 
     return (
         <div className='motheeeeer'>
@@ -60,27 +64,27 @@ export default function Exercicio4() {
 
                             <div className='group'>
                                 <h4>Nome do livro: </h4>
-                                <input type="text" placeholder='Digite o nome do livro aqui' />
+                                <input type="text" placeholder='Digite o nome do livro aqui' value={nomeLivro} onChange={Livro} />
                             </div>
 
                             <div className='group'>
                                 <h4>Total de páginas: </h4>
-                                <input type="text" placeholder='0' />
+                                <input type="text" placeholder='0' value={totalPages} onChange={Pages} />
                             </div>
 
                             <div className='group'>
                                 <h4>Tempo em segundos de leitura: </h4>
-                                <input type="text" placeholder='0' />
+                                <input type="text" placeholder='0' value={totalSegs} onChange={Segs} />
                             </div>
                         </div>
 
                         <div className='bt-00'>
-                            <button>Executar</button>
+                            <button onClick={CalculoTotal}>Executar</button>
                         </div>
                     </div>
 
                     <div className='result-00'>
-                        <h4>Resultado: você lerá o livro em: XXXXX horas</h4>
+                        <h4>Resultado: você lerá {nomeLivro} em: {totalValor.toFixed(2)} horas</h4>
                     </div>
 
                 </div>
