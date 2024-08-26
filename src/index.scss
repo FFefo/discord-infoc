@@ -6,25 +6,6 @@
   font-family: "Roboto";
 }
 
-.quadrado {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 158px;
-  width: 215px;
-  background-color: white;
-  border: 0px solid #ffffff;
-  border-radius: 10px;
-  gap: 14px;
-  font-size: 14px;
-
-  .nomeex {
-    font-weight: 600;
-
-  }
-}
-
 .faixa {
   width: 1145px;
   height: 4px;

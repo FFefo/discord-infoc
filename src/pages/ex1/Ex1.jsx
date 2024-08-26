@@ -1,6 +1,7 @@
 import './Ex1.scss'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import {Cabecao} from '../../components/cabecalho/cabecalho.jsx';
 
 export default function Exercicio1() {
 
@@ -25,18 +26,7 @@ export default function Exercicio1() {
 
   return (
     <div className="Ex1">
-      <header className="pagina-exercicio1">
-        <div className="logo">
-
-          <img src="/assets/images/frei-logo.png" alt='' width='51px' height='60px' />
-          <h2>React FreiS</h2>
-
-        </div>
-        <div className="topicos">
-          <Link to="/">Início</Link>
-          <Link to="/Sobre">Sobre</Link>
-        </div>
-      </header>
+      <Cabecao />
       <div className='centro'>
         <div className='título'>
           <Link to='/'><img src="/assets/images/setinha.png" alt="" width='36px' /></Link>

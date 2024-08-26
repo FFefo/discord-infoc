@@ -1,7 +1,9 @@
 import './App.scss';
 import { Link } from 'react-router-dom';
+import { Card } from '../../components/card/card.jsx';
 
 export default function Inicio() {
+
   return (
     <div className="App">
       <header className="pagina-inicio">
@@ -22,11 +24,7 @@ export default function Inicio() {
           <h2>Escolha um treino...</h2>
           <div className='exs'>
 
-            <div className='ex1 quadrado'>
-              <div className='laranja'></div>
-              <p className='nomeex'>Cupom de desconto</p>
-              <Link to='/exercicio1'><p>Exercício 01</p></Link>
-            </div>
+            <Card cor='laranja' />
 
             <div className='ex2 quadrado'>
               <div className='limao'></div>

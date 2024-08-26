@@ -2,44 +2,6 @@
   background-color: #f5f6fa;
   height: 938px;
 
-  .pagina-exercicio1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 82px;
-    background-color: #6278F7;
-    color: white;
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 35px;
-      position: relative;
-      left: 80px;
-
-      h2 {
-        font-size: 20px;
-        font-weight: 500;
-      }
-    }
-
-    .topicos {
-      display: flex;
-      position: relative;
-      right: 80px;
-      gap: 25px;
-      font-size: 20px;
-      font-weight: 300;
-
-      a {
-        text-decoration: none;
-        color: white;
-      }
-    }
-
-  }
-
   .centro {
     display: flex;
     flex-direction: column;
