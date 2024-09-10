@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     height: 158px;
-    width: 215px;
+    width: 200px;
     background-color: white;
     border: 0px solid #ffffff;
     border-radius: 10px;
@@ -15,136 +15,68 @@
         font-weight: 600;
 
     }
-}
 
-.laranja {
+    .icone {
+        width: 60px;
+        height: 60px;
 
-    width: 60px;
-    height: 60px;
-    left: 157px;
-    top: 241px;
+        left: 157px;
+        top: 241px;
 
-    background: #FFCE37;
-    border-radius: 12px;
+        border-radius: 12px;
+    }
 
-}
+    .laranja {
+        background: #FFCE37;
 
-.limao {
+    }
 
-    width: 60px;
-    height: 60px;
-    left: 157px;
-    top: 241px;
+    .limao {
+        background: #B3FF37;
 
-    background: #B3FF37;
-    border-radius: 12px;
+    }
 
-}
+    .ciano {
+        background: #37FFF3;
 
-.ciano {
+    }
 
-    width: 60px;
-    height: 60px;
-    left: 157px;
-    top: 241px;
+    .roxo {
+        background: #8823fc;
 
-    background: #37FFF3;
-    border-radius: 12px;
+    }
 
-}
+    .azul {
+        background: #0000ff;
 
-.roxo {
+    }
 
-    width: 60px;
-    height: 60px;
-    left: 157px;
-    top: 241px;
+    .amarelo {
+        background: #ffe75d;
 
-    background: #8823fc;
-    border-radius: 12px;
+    }
 
-}
+    .vermelho {
+        background: #ff0000;
 
-.azul {
+    }
 
-    width: 60px;
-    height: 60px;
-    left: 157px;
-    top: 241px;
+    .preto {
+        background: #000000;
 
-    background: #0000ff;
-    border-radius: 12px;
+    }
 
-}
+    .rosa {
+        background: #ff00ff;
+    }
 
-.amarelo {
+    .verde {
+        background: #008000;
 
-    width: 60px;
-    height: 60px;
-    left: 157px;
-    top: 241px;
+    }
 
-    background: #ffe75d;
-    border-radius: 12px;
+    .marrom {
+        background: #3b2614;
 
-}
-
-.vermelho {
-
-    width: 60px;
-    height: 60px;
-    left: 157px;
-    top: 241px;
-
-    background: #ff0000;
-    border-radius: 12px;
-
-}
-
-.preto {
-
-    width: 60px;
-    height: 60px;
-    left: 157px;
-    top: 241px;
-
-    background: #000000;
-    border-radius: 12px;
-
-}
-
-.rosa {
-
-    width: 60px;
-    height: 60px;
-    left: 157px;
-    top: 241px;
-
-    background: magenta;
-    border-radius: 12px;
-
-}
-
-.verde {
-
-    width: 60px;
-    height: 60px;
-    left: 157px;
-    top: 241px;
-
-    background: green;
-    border-radius: 12px;
-
-}
-
-.marrom {
-
-    width: 60px;
-    height: 60px;
-    left: 157px;
-    top: 241px;
-
-    background: rgb(59, 38, 20);
-    border-radius: 12px;
-
+    }
 }

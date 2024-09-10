@@ -1,6 +1,7 @@
 import './Ex10.scss'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { CabecalhoEx } from '../../components/cabecalhoex/cabecalhoex';
 
 export default function Exercicio10() {
 
@@ -8,17 +9,10 @@ export default function Exercicio10() {
     const [valorPeso, setValorPeso] = useState(0)
     const [valorIMC, setValorIMC] = useState(0)
     const [situacaoIMC, setSituacaoIMC] = useState('')
-    const [listaIMC, setListaIMC] = useState([])
 
-    function Altura(e) {
-        let novaAltura = Number(e.target.value)
-        setValorAltura(novaAltura)
-    }
-
-    function Peso(e) {
-        let novaPeso = Number(e.target.value)
-        setValorPeso(novaPeso)
-    }
+    const [novoRegistro, setNovoRegistro] = useState('');
+    const [listaRegistros, setListaRegistros] = useState([])
+    const [editando, setEditando] = useState(-1)
 
     function IMC() {
         let imc = valorPeso / valorAltura ** 2
@@ -40,8 +34,32 @@ export default function Exercicio10() {
 
         setValorIMC(imc)
         setSituacaoIMC(situacao)
+        let reg = 'Altura: ' + valorAltura + ' | Peso: ' + valorPeso + ' | Situação: ' + situacao
+        setNovoRegistro(reg)
+
+        if (reg !== '') {
+
+            if (editando === -1) {
+
+                setListaRegistros([...listaRegistros, reg]);
+            } else {
+                listaRegistros[editando] = reg;
+                setListaRegistros([...listaRegistros])
+                setEditando(-1);
+            }
+        }
+
     }
 
+    function removerRegistro(pos) {
+        listaRegistros.splice(pos, 1);
+        setListaRegistros([...listaRegistros]);
+    }
+
+    function alterarRegistro(pos) {
+        setNovoRegistro(listaRegistros[pos]);
+        setEditando(pos);
+    }
 
     return (
         <div className="Ex10">
@@ -58,40 +76,50 @@ export default function Exercicio10() {
                 </div>
             </header>
             <div className='centro'>
-                <div className='título'>
-                    <Link to='/'><img src="/assets/images/setinha.png" alt="" width='36px' /></Link>
-                    <h2>Exercício 10 - Cálculo IMC</h2>
-                </div>
 
-                <div className='verde faixa'></div>
                 <div className='conteúdo'>
 
-                    <div className='descrição'>
-                        <p>Implemente um programa em Java que a partir da altura e do peso de uma pessoa, <b>calcule o IMC</b> e avalie a faixa correspondente a tabela ao lado. Ao final, apresente o IMC e a situação.</p>
+                    <CabecalhoEx titulo='Exercício 10 - Cálculo IMC' cor='#b75333' desc='Implemente um programa em Java que a partir da altura e do peso de uma pessoa, calcule o IMC e avalie a faixa correspondente a tabela ao lado. Ao final, apresente o IMC e a situação.' />
+
+                    <div className='calculo'>
+
+                        <div className='caixa'>
+
+                            <div className='entradas'>
+
+                                <div className='grupo1'>
+
+                                    <h4>Altura</h4>
+                                    <input type="text" placeholder='0' value={valorAltura} onChange={e => setValorAltura(e.target.value)} />
+                                </div>
+
+                                <div className='grupo2'>
+
+                                    <h4>Peso</h4>
+                                    <input type="text" placeholder='0' value={valorPeso} onChange={e => setValorPeso(e.target.value)} />
+
+                                </div>
+                            </div>
+                            <div className='botão'>
+                                <button onClick={IMC}>Executar</button>
+                            </div>
+                        </div>
+
+
+                        <div className='lista'>
+
+                            <ul>
+                                {listaRegistros.map((item, pos) =>
+                                    <li key={pos}>
+                                        {item}
+                                        <img src="./assets/images/trash-can-solid.svg" alt="delete" width='15px' onClick={() => removerRegistro(pos)} />  &nbsp;
+                                    </li>
+                                )}
+                            </ul>
+
+                        </div>
                     </div>
 
-                    <div className='caixa'>
-                        <div className='grupo1'>
-
-                            <h4>Informe sua altura em metros</h4>
-                            <input type="text" placeholder='0' value={valorAltura} onChange={Altura} />
-                        </div>
-                        <br />
-                        <div className='grupo2'>
-                            <h4>Informe seu peso em Kg</h4>
-                            <input type="text" placeholder='0' value={valorPeso} onChange={Peso} />
-                        </div>
-
-                        <div className='botão'>
-                            <button onClick={IMC}>Executar</button>
-                        </div>
-
-                    </div>
-
-                    <div className='resultado'>
-                        <h4>Seu IMC é {valorIMC.toFixed(2)}</h4>
-                        <h4>Sua classificação é {situacaoIMC}</h4>
-                    </div>
                 </div>
             </div>
         </div>

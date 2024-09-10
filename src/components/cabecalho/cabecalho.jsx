@@ -3,7 +3,7 @@ import './cabecalho.scss'
 
 export function Cabecao() {
     return (
-        <header className="pagina-exercicio1">
+        <header className="comp-cabecalho">
             <div className="logo">
 
                 <img src="/assets/images/frei-logo.png" alt='' width='51px' height='60px' />

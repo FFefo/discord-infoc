@@ -1,6 +1,7 @@
 import './Ex6.scss'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { CabecalhoEx } from '../../components/cabecalhoex/cabecalhoex';
 
 export default function Exercicio6() {
 
@@ -45,17 +46,11 @@ export default function Exercicio6() {
                 </div>
             </header>
             <div className='centro'>
-                <div className='título'>
-                    <Link to='/'><img src="/assets/images/setinha.png" alt="" width='36px' /></Link>
-                    <h2>Exercício 06 - Cálculo de Salário</h2>
-                </div>
 
-                <div className='amarelo faixa'></div>
                 <div className='conteúdo'>
 
-                    <div className='descrição'>
-                        <p>Implementar um programa em Java para <b>calcular o salário líquido</b> de um funcionário, a partir de seu salário base, do bônus mensal em porcentagem e do total de descontos em reais.</p>
-                    </div>
+                    <CabecalhoEx titulo='Exercício 06 - Cálculo de Salário' cor='#ff5b37' desc='Implementar um programa em Java para calcular o salário líquido de um funcionário, a partir de seu salário base, do bônus mensal em porcentagem e do total de descontos em reais.' />
+
 
                     <div className='caixa'>
                         <div className='inputs'>
@@ -63,15 +58,15 @@ export default function Exercicio6() {
                             <div className='grupo'>
 
                                 <h4>Informe seu salário</h4>
-                                <input type="text" placeholder='0' value={valorSalario} onChange={Salario}/>
+                                <input type="text" placeholder='0' value={valorSalario} onChange={Salario} />
                             </div>
                             <div className='grupo'>
                                 <h4>Informe o valor do bônus</h4>
-                                <input type="text" placeholder='0' value={valorBonus} onChange={Bonus}/>
+                                <input type="text" placeholder='0' value={valorBonus} onChange={Bonus} />
                             </div>
                             <div className='grupo'>
                                 <h4>Informe o desconto em R$</h4>
-                                <input type="text" placeholder='0' value={valorDesconto} onChange={Desconto}/>
+                                <input type="text" placeholder='0' value={valorDesconto} onChange={Desconto} />
                             </div>
 
                         </div>

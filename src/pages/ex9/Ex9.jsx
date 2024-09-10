@@ -1,6 +1,7 @@
 import './Ex9.scss'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { CabecalhoEx } from '../../components/cabecalhoex/cabecalhoex';
 
 export default function Exercicio9() {
 
@@ -47,17 +48,11 @@ export default function Exercicio9() {
                 </div>
             </header>
             <div className='centro'>
-                <div className='título'>
-                    <Link to='/'><img src="/assets/images/setinha.png" alt="" width='36px' /></Link>
-                    <h2>Exercício 09 - Sorveteria</h2>
-                </div>
 
-                <div className='rosa faixa'></div>
                 <div className='conteúdo'>
 
-                    <div className='descrição'>
-                        <p>Implemente um programa em Javascript que <b>calcule o total</b> a se pagar em uma compra na sorveteria, a partir do total de gramas comprado. O preço de <b>100g é R$ 3,50</b> mas se o total de gramas for a partir de 1kg, o preço das 100g <b>diminui</b> 50 centavos. Se o total de gramas for menor ou igual a zero, enviar a mensagem <b>"Peso Inválido".</b></p>
-                    </div>
+                    <CabecalhoEx titulo='Exercício 09 - Sorveteria' cor='#d0d0d0' desc='Implemente um programa em Javascript que calcule o total a se pagar em uma compra na sorveteria, a partir do total de gramas comprado. O preço de 100g é R$ 3,50 mas se o total de gramas for a partir de 1kg, o preço das 100g diminui 50 centavos. Se o total de gramas for menor ou igual a zero, enviar a mensagem "Peso Inválido".' />
+
 
                     <div className='caixa'>
                         <div className='grupo1'>

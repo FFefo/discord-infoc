@@ -1,6 +1,7 @@
 import './Ex2.scss'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { CabecalhoEx } from '../../components/cabecalhoex/cabecalhoex';
 
 
 export default function Exercicio2() {
@@ -34,18 +35,9 @@ export default function Exercicio2() {
         </div>
       </header>
       <div className='centro'>
-        <div className='título'>
-          <Link to='/'><img src="/assets/images/setinha.png" alt="" width='36px' /></Link>
-          <h2>Exercício 02 - Converter Kg/gramas</h2>
-        </div>
-
-        <div className='limao faixa'></div>
 
         <div className='conteúdo'>
-
-          <div className='descrição'>
-            <p>Implementar um programa em Javascript para <b>converter kilos em gramas.</b></p>
-          </div>
+          <CabecalhoEx titulo='Exercício 02 - Converter Kg/gramas' cor='#B3FF37' desc='Implementar um programa em Javascript para converter kilos em gramas.' />
 
           <div className='caixa'>
             <div className='grupo1'>

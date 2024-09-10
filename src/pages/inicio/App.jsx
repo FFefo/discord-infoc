@@ -24,68 +24,28 @@ export default function Inicio() {
           <h2>Escolha um treino...</h2>
           <div className='exs'>
 
-            <Card cor='laranja' />
+            <Card cor='#FFCE37' titulo='Cupom de desconto' subtitulo='Exercício 1' link='/exercicio1'/>
 
-            <div className='ex2 quadrado'>
-              <div className='limao'></div>
-              <p className='nomeex'>Converter Kg/gramas</p>
-              <Link to='/exercicio2'><p>Exercício 02</p></Link>
-            </div>
+            <Card cor='#B3FF37' titulo='Converter Kg/gramas' subtitulo='Exercício 2' link='/exercicio2'/>
 
-            <div className='ex3 quadrado'>
-              <div className='ciano'></div>
-              <p className='nomeex'>Valor total por quantidade</p>
-              <Link to='/exercicio3'><p>Exercício 03</p></Link>
-            </div>
+            <Card cor='#37FFF3' titulo='Valor total por quantidade' subtitulo='Exercício 3' link='/exercicio3'/>
 
-            <div className='ex4 quadrado'>
-              <div className='roxo'></div>
-              <p className='nomeex'>Tempo de leitura</p>
-              <Link to='/exercicio4'><p>Exercício 04</p></Link>
-            </div>
+            <Card cor='#37b7ff' titulo='Leitura de livro' subtitulo='Exercício 4' link='/exercicio4'/>
 
-            <div className='ex5 quadrado'>
-              <div className='azul'></div>
-              <p className='nomeex'>Média de Notas</p>
-              <Link to='/exercicio5'><p>Exercício 05</p></Link>
-            </div>
+            <Card cor='#cb37ff' titulo='Média de notas' subtitulo='Exercício 5' link='/exercicio5'/>
 
-            <div className='ex6 quadrado'>
-              <div className='amarelo'></div>
-              <p className='nomeex'>Cálculo de Salário</p>
-              <Link to='/exercicio6'><p>Exercício 06</p></Link>
-            </div>
+            <Card cor='#ff5b37' titulo='Salário líquido' subtitulo='Exercício 6' link='/exercicio6'/>
 
-            <div className='ex7 quadrado'>
-              <div className='vermelho'></div>
-              <p className='nomeex'>Cores Primárias</p>
-              <Link to='/exercicio7'><p>Exercício 07</p></Link>
-            </div>
+            <Card cor='#37ffab' titulo='Cores primárias' subtitulo='Exercício 7' link='/exercicio7'/>
 
-            <div className='ex8 quadrado'>
-              <div className='preto'></div>
-              <p className='nomeex'>Termômetro</p>
-              <Link to='/exercicio8'><p>Exercício 08</p></Link>
-            </div>
+            <Card cor='#000000' titulo='Temperatura' subtitulo='Exercício 8' link='/exercicio8'/>
 
-            <div className='ex9 quadrado'>
-              <div className='rosa'></div>
-              <p className='nomeex'>Sorveteria</p>
-              <Link to='/exercicio9'><p>Exercício 09</p></Link>
-            </div>
+            <Card cor='#d0d0d0' titulo='Sorveteria' subtitulo='Exercício 9' link='/exercicio9'/>
 
-            <div className='ex10 quadrado'>
-              <div className='verde'></div>
-              <p className='nomeex'>Cálculo IMC</p>
-              <Link to='/exercicio10'><p>Exercício 10</p></Link>
-            </div>
+            <Card cor='#b75333' titulo='Cálculo de imc com histórico' subtitulo='Exercício 10' link='/exercicio10'/>
 
-            <div className='ex11 quadrado'>
-              <div className='marrom'></div>
-              <p className='nomeex'>Tabuada</p>
-              <Link to='/exercicio11'><p>Exercício 11</p></Link>
+            <Card cor='#6533b7' titulo='Tabuada' subtitulo='Exercício 11' link='/exercicio11'/>
 
-            </div>
           </div>
 
         </div>

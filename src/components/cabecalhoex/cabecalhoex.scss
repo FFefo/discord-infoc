@@ -1,0 +1,20 @@
+.comp-cabecalhoex {
+    .descrição {
+        display: flex;
+        justify-content: center;
+        line-height: 15px;
+        font-size: 15px;
+        margin-top: 22px;
+        text-align: center;
+        padding: 80px 15px;
+
+        width: 1170px;
+        height: 195px;
+        background-color: white;
+        border-radius: 10px;
+
+        p {
+            width: 498px;
+        }
+    }
+}

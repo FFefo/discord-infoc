@@ -1,7 +1,7 @@
 import './Ex1.scss'
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import {Cabecao} from '../../components/cabecalho/cabecalho.jsx';
+import { Cabecao } from '../../components/cabecalho/cabecalho.jsx';
+import { CabecalhoEx } from '../../components/cabecalhoex/cabecalhoex.jsx';
 
 export default function Exercicio1() {
 
@@ -28,17 +28,10 @@ export default function Exercicio1() {
     <div className="Ex1">
       <Cabecao />
       <div className='centro'>
-        <div className='título'>
-          <Link to='/'><img src="/assets/images/setinha.png" alt="" width='36px' /></Link>
-          <h2>Exercício 01 - Cupom de desconto</h2>
-        </div>
 
-        <div className='laranja faixa'></div>
+
         <div className='conteúdo'>
-
-          <div className='descrição'>
-            <p>Implementar um programa em <b>Javascript</b> para calcular o valor final de uma compra a partir do valor da compra e do cupom de desconto. <b>O cupom diz quantos reais</b> terá de desconto.</p>
-          </div>
+          <CabecalhoEx titulo='Cupom de Desconto' cor='#FFCE37' desc='Implementar um programa em Javascript para calcular o valor final de uma compra a partir do valor da compra e do cupom de desconto. O cupom diz quantos reais terá de desconto.' />
 
           <div className='caixa'>
             <div className='grupo1'>
